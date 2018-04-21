@@ -2,7 +2,7 @@ package main.java;
 
 import javax.swing.SwingUtilities;
 
-import main.java.tcu.physics.gbc.*;
+import main.java.tcu.physics.test.*;
 
 public class GLTest {
 	public static void main(String[] args){
