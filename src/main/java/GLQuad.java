@@ -1,5 +1,5 @@
 
-package main.java.tcu.physics.lib3d;
+package main.java;
 
 public class GLQuad {
 

@@ -1,4 +1,4 @@
-package main.java.tcu.physics.lib3d;
+package main.java;
 
 import java.awt.Color;
 import java.awt.Font;

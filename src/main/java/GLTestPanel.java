@@ -1,4 +1,4 @@
-package main.java.tcu.physics.gbc;
+package main.java;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -7,7 +7,7 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.JPanel;
 
-import main.java.tcu.physics.lib3d.*;
+
 
 /**
  * 3D GRAPHICS ENGINE - using Java2D...
