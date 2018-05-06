@@ -7,6 +7,8 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.JPanel;
 
+
+
 /**
  * 3D GRAPHICS ENGINE - using Java2D...
  * Cole H Turner
@@ -64,13 +66,6 @@ public class GLTestPanel extends JPanel {
 	side.setVec(GLVec.perp(GLVec.Z, g3d.getRight()).getUnit());
 	
 	// GRID...
-	int gridSize = 20;
-	g3d.setColor(Color.GREEN);
-	for(int i = 0; i < gridSize; i++)
-	    g3d.drawLine(new GLVec(i,0,0), new GLVec(i,gridSize,0));
-	g3d.setColor(Color.RED);
-	for(int j = 0; j < gridSize; j++)
-	    g3d.drawLine(new GLVec(0,j,0), new GLVec(gridSize,j,0));
 	g3d.setColor(white);
 	for(GLPoly p : polys){
 	    g3d.fillPolygon(p);
@@ -78,10 +73,6 @@ public class GLTestPanel extends JPanel {
 	}
 	
        	pos.add(GLVec.scale(vel, 0.1));
-    }
-
-    private void updateRotation(){
-	g3d.setRotation(Math.toRadians(yaw), Math.toRadians(pitch), 0.0);
     }
 
     public void test(){
@@ -110,19 +101,15 @@ public class GLTestPanel extends JPanel {
 	    break;
 	case KeyEvent.VK_UP :
 	    pitch++;
-	    updateRotation();	    
 	    break;
 	case KeyEvent.VK_DOWN :
 	    pitch--;
-	    updateRotation();	    
 	    break;
 	case KeyEvent.VK_LEFT :
 	    yaw++;
-	    updateRotation();	    
 	    break;
 	case KeyEvent.VK_RIGHT :
 	    yaw--;
-	    updateRotation();
 	    break;
 	}
     }
