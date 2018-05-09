@@ -28,3 +28,5 @@ SPACE => Fall downward
 
 ![view1](https://github.com/swarmalator/java-3D-graphics-engine/blob/master/images/view1.png)
 ![view2](https://github.com/swarmalator/java-3D-graphics-engine/blob/master/images/view2.png)
+
+This project is licensed under the terms of the MIT license.
